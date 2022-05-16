@@ -1,0 +1,6 @@
+# poetry lock file
+poetry.lock
+
+
+# pycache
+__pycache__/
