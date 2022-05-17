@@ -7,6 +7,7 @@ authors = ["Grupo 1 - Princípios Físicos de Sensoriamento Remoto"]
 [tool.poetry.dependencies]
 python = "^3.8"
 matplotlib = "^3.5.2"
+seaborn = "^0.11.2"
 
 [tool.poetry.dev-dependencies]
 jupyterlab = "^3.4.2"
