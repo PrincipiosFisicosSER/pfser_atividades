@@ -1,6 +1,8 @@
 import numpy as np
 
 
+__standard_air_molecule_density = 2.68678e19 # (molecule/cm³)
+
 __standard_atmospheric_gas_composition = {
     'nitrogen': 7.8084e-1,
     'oxigen': 2.0948e-1,
@@ -113,7 +115,7 @@ def get_atm_molecular_density(temperature, pressure):
 
 
 def compute_gases_density(
-    air_molecule_density,
+    air_molecule_density=__standard_air_molecule_density,
     atmosphere_composition=__standard_atmospheric_gas_composition
     ):
 

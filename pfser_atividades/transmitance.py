@@ -89,3 +89,10 @@ def compute_rayleigh_cross_section(refraction_index_function,
                                                            cross_sections_list)}
 
     return cross_sections
+
+
+def compute_rayleigh_phase_function(scattering_angle):
+    """Compute Rayleigh phase function for air molecules and pure water given
+    scattering angle (radians).
+    """
+    return 0.75 * (1 + np.cos(scattering_angle) ** 2)
