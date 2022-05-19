@@ -56,15 +56,15 @@ def compute_zenith_angle(sum_declination: float,
     return zenith, zenith_cosine
 
 
-def compute_irradiation(correction_factor, sum_declination, sum_hour, 
+def compute_irradiance(correction_factor, sum_declination, sum_hour, 
                        latitude, sum_constant=1367):
     
-    irradiation = (sum_constant * 3.6 * correction_factor * 
+    irradiance = (sum_constant * 3.6 * correction_factor * 
     (np.sin(sum_declination) * np.sin(latitude * np.pi / 180)
     + np.cos(sum_declination) * np.cos(latitude * np.pi / 180) * np.cos(sum_hour)))
     
-    return irradiation
+    return irradiance
 
 
-def compute_irradiance(irradiation):
-    return irradiation / 3.6
+def compute_radiance(irradiance):
+    return irradiance / 3.6
